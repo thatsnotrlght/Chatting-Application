@@ -86,6 +86,17 @@ public class Server extends JFrame implements ActionListener{ //Server is now su
 		status.setFont(new Font("SAN_SERIF", Font.BOLD, 12));
 		headerPanel.add(status);
 		
+		JTextField typed_text = new JTextField();
+		typed_text.setBounds(5, 655, 310, 40);
+		add(typed_text);
+		typed_text.setFont(new Font("SAN_SERIF", Font.PLAIN, 16));
+		
+		JButton send = new JButton("Send");
+		send.setBounds(320, 655, 123, 40);
+		send.setBackground(new Color(7, 94, 84));
+		send.setFont(new Font("SAN_SERIF", Font.PLAIN, 16));
+		send.setForeground(Color.WHITE);
+		add(send);
 		
 		setVisible(true); // Make JFrame visible
 		
